@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="medium" (click)="cancel()">Cancel</ion-button>
+    </ion-buttons>
+    <ion-title>Welcome</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="confirm()" [strong]="true">Confirm</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <form [formGroup]="addUserForm">
+    <ion-item>
+      <ion-input labelPlacement="stacked" label="Enter your Emp_ID" placeholder="Emp_ID" formControlName="Emp_ID"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input labelPlacement="stacked" label="Enter your Username" placeholder="Username" formControlName="Username"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input labelPlacement="stacked" label="Enter your Password" placeholder="Password" formControlName="Password"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input labelPlacement="stacked" label="Enter your Full name" placeholder="Fullname" formControlName="FullName"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input labelPlacement="stacked" label="Enter your Division" placeholder="Division" formControlName="Division"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input labelPlacement="stacked" label="Enter your Designation" placeholder="Designation" formControlName="Designation"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input labelPlacement="stacked" label="Enter your Access" placeholder="Access" formControlName="Access"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input labelPlacement="stacked" label="Enter your email" placeholder="email" formControlName="email"></ion-input>
+    </ion-item>
+  </form>
+</ion-content>
